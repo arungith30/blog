@@ -14,7 +14,8 @@
     "path": "^0.12.7"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build": "npm"
   },
   "repository": {
     "type": "git",
