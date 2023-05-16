@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "nodemon index.js",
-    "build": "npm"
+    "build": "npm i"
   },
   "repository": {
     "type": "git",
