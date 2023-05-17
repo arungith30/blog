@@ -8,6 +8,7 @@ const postRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 const path = require("path");
+const PORT = process.env.PORT || 6010
 
 const cors = require("cors");
 app.use(cors());
@@ -51,6 +52,6 @@ app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 
-app.listen("5000", () => {
+app.listen("PORT", () => {
   console.log("Backend is running.");
 });
