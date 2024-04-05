@@ -13,10 +13,10 @@ router.post("/register", async (req, res) => {
       password: hashedPass,
     });
 
-    const user = await newUser.save();
-   return res.status(200).json(user);
+  const user = await newUser.save();
+  return res.status(200).json(user);
   } catch (err) {
-    return res.status(500).json(err);
+  return res.status(500).json(err);
   }
 });
 
