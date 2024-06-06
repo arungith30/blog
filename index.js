@@ -40,9 +40,7 @@ mongoose
 
 
 
-const upload = multer({ storage: storage });
-
-app.post("/api/upload", upload.single("file"), upload);
+app.post("/api/upload", upload.single("file"), image-controller);
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
