@@ -7,6 +7,7 @@ const userRoute = require("./routes/users");
 const postRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
 const upload = require ("./utils/uploads")
+const uploadImage=require ("./controller/image-controller.js")
 const multer = require("multer");
 const path = require("path");
 dotenv.config();
@@ -40,7 +41,7 @@ mongoose
 
 
 
-app.post("/api/upload", upload.single("file"), image-controller);
+app.post("/api/upload", upload.single("file"), uploadImage);
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
