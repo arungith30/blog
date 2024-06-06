@@ -10,7 +10,7 @@ const upload = require ("./utils/uploads")
 const multer = require("multer");
 const path = require("path");
 dotenv.config();
-const PORT = process.env.PORT || 6010
+const PORT = process.env.PORT || 4000
 
 // const fs = require("fs");
 // const uploadDirectory=path.join(__dirname,'images');

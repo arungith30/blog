@@ -1,5 +1,6 @@
-import grid from 'gridfs-stream';
-import mongoose from 'mongoose';
+const grid = require ('gridfs-stream')
+
+const mongoose = require("mongoose");
 
 const url = 'https://blog-aunf.onrender.com/';
 
